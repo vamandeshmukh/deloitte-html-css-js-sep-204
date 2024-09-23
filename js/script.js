@@ -21,19 +21,54 @@
 
 // dynamically typed language 
 
-let myVar;
-console.log(myVar);
-console.log(typeof (myVar));
-myVar = 10;
-console.log(myVar);
-console.log(typeof (myVar));
-myVar = 20;
-console.log(myVar);
-console.log(typeof (myVar));
-myVar = "abc";
-console.log(myVar);
-console.log(typeof (myVar));
-myVar = false;
-console.log(myVar);
-console.log(typeof (myVar));
+// let myVar;
+// console.log(myVar);
+// console.log(typeof (myVar));
+// myVar = 10;
+// console.log(myVar);
+// console.log(typeof (myVar));
+// myVar = 20;
+// console.log(myVar);
+// console.log(typeof (myVar));
+// myVar = "abc";
+// console.log(myVar);
+// console.log(typeof (myVar));
+// myVar = false;
+// console.log(myVar);
+// console.log(typeof (myVar));
 
+// string literals 
+
+// let firstName = 'Sonu';
+// let lastName = "Reddy";
+// let fullName = `Sonu Reddy`;
+
+// arrays in JS 
+
+const myArray = [10, 20.25, 'abc', false];
+console.log(myArray);
+
+for (let elem of myArray) {
+    console.log(elem);
+}
+
+// object in JS 
+
+const employee = {
+    id: 101,
+    name: 'Sonu',
+    salary: 10.25,
+    phones: [9876543210, 7894561230],
+    address: {
+        street: 'Bank street',
+        city: 'Hyderabad',
+        pin: 500001
+    },
+    bio: '/sonu',
+    isMarried: false
+};
+
+console.log(employee);
+
+console.log(employee.name);
+console.log(employee.address.city);
