@@ -45,30 +45,72 @@
 
 // arrays in JS 
 
-const myArray = [10, 20.25, 'abc', false];
-console.log(myArray);
+// const myArray = [10, 20.25, 'abc', false];
+// console.log(myArray);
 
-for (let elem of myArray) {
-    console.log(elem);
-}
+// for (let elem of myArray) {
+//     console.log(elem);
+// }
 
-// object in JS 
+// Object in JS 
 
-const employee = {
-    id: 101,
-    name: 'Sonu',
-    salary: 10.25,
-    phones: [9876543210, 7894561230],
-    address: {
-        street: 'Bank street',
-        city: 'Hyderabad',
-        pin: 500001
-    },
-    bio: '/sonu',
-    isMarried: false
-};
+// const employee = {
+//     id: 101,
+//     name: 'Sonu',
+//     salary: 10.25,
+//     phones: [9876543210, 7894561230],
+//     address: {
+//         street: 'Bank street',
+//         city: 'Hyderabad',
+//         pin: 500001
+//     },
+//     bio: '/sonu',
+//     isMarried: false
+// };
 
-console.log(employee);
+// console.log(employee);
+// console.log(employee.name);
+// console.log(employee.address.city);
 
-console.log(employee.name);
-console.log(employee.address.city);
+
+// alert in JS 
+//  alert("This is an alert!");
+
+// Functions in JavaScript 
+
+// // Old JavaScript function  
+
+// function fun1 () {
+//     console.log('fun1 function called.');
+// }
+
+// fun1();
+
+// // Modern JavaScript arrow funciton 
+
+// const fun2 = () => {
+//     console.log('fun2 function called.');
+// };
+
+// fun2();
+
+
+// const addNums = (a, b) => {
+//     console.log(a + b);
+// };
+
+// addNums();
+// addNums(10);
+// addNums(10, 20);
+// addNums(10, 20, 30);
+
+
+// const addNums = (a, b) => {
+//     return a + b;
+// };
+
+// const num = addNums(10, 20);
+// console.log(num);
+
+
+
