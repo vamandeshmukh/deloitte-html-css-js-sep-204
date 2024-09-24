@@ -17,20 +17,18 @@
 // };
 // fun({ city: 'Pune' });
 
-// // FUNCTION value 
-const fun = (arg) => {
-    arg(); // function call 
-    console.log('fun function invoked');
-};
+// // // FUNCTION value 
+// const fun = (arg) => {
+//     arg(); // function call 
+//     console.log('fun function invoked');
+// };
 
-fun(() => { console.log('anonymous function invoked.'); });
+// fun(() => { console.log('anonymous function invoked.'); });
 
 // const callbackFun = () => {
 //     console.log('named function called.');
 // }
 // fun(callbackFun);
-
-
 
 // // FUNCTION value 
 const fun2 = (arg) => {
@@ -38,6 +36,7 @@ const fun2 = (arg) => {
     console.log('fun function invoked');
 };
 
-fun2(() => {
+fun2((address) => {
+    console.log(address.city);
     console.log('anonymous function invoked.');
 });
