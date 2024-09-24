@@ -18,7 +18,7 @@
         <div class="row content-center">
             <div class="col-4 border border-light rounded mx-3 my-3 py-3">
                 <p class="lead">Login Form</p>
-                <form class="form form-group" onsubmit="return false;">
+                <form class="form form-group" onsubmit="submitLogin(); return false;">
                     <input class="form-control mt-3 mb-3" type="text" id="username" name="username"
                         placeholder="Enter username" required autofocus />
                     <input class="form-control mt-3 mb-3" type="password" id="password" name="password"
@@ -26,18 +26,27 @@
                     <input class="form-control btn btn-outline-primary" type="submit" value="Login" />
                 </form>
             </div>
+            <div id="message" class="col-4 border border-light rounded mx-3 my-3 py-3">
+                <p id="post-login"></p>
+            </div>
         </div>
         <hr />
     </div>
-
     <script>
-        const success = document.getElementById('success');
-        const failure = document.getElementById('failure');
-
+        const postLogin = document.getElementById('post-login');
         const submitLogin = () => {
             console.log('submitLogin');
-        };
+            const username = document.getElementById('username').value;
+            const password = document.getElementById('password').value;
 
+            if (username === 'sonu' && password === 'sonu') {
+                postLogin.textContent = 'Login successful!';
+                postLogin.className = 'lead text-success';
+            } else {
+                postLogin.textContent = 'Invalid credentials';
+                postLogin.className = 'lead text-danger';
+            }
+        };
     </script>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
