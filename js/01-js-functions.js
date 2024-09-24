@@ -31,12 +31,21 @@
 // fun(callbackFun);
 
 // // FUNCTION value 
-const fun2 = (arg) => {
-    arg({ city: 'Pune' }); // function call 
-    console.log('fun function invoked');
-};
+// const fun2 = (arg) => {
+//     arg({ city: 'Pune' }); // function call 
+//     console.log('fun function invoked');
+// };
 
-fun2((address) => {
-    console.log(address.city);
-    console.log('anonymous function invoked.');
-});
+// fun2((address) => {
+//     console.log(address.city);
+//     console.log('anonymous function invoked.');
+// });
+
+console.log('one');
+
+setTimeout(() => {
+    console.log('two');
+}, 1000);
+
+console.log('three');
+
